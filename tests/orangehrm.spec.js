@@ -63,5 +63,6 @@ test.describe('OrangeHRM Tests', () => {
         
         await expect(fromDateInput).toBeVisible();
         await expect(toDateInput).toBeVisible();
+        console.log('Leave page elements verified successfully');
     });
 });
