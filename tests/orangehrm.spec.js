@@ -4,7 +4,7 @@ test.describe('OrangeHRM Tests', () => {
     test('Login and Navigate to Leave Calendar', async ({ page }) => {
         // Navigate to OrangeHRM
         await page.goto('https://opensource-demo.orangehrmlive.com/');
-        
+        console.log("login started
         // Wait for the page to load and verify we're on the login page
         await expect(page.locator('.orangehrm-login-title')).toBeVisible();
         
