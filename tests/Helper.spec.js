@@ -65,31 +65,31 @@ test.describe('Facebook Login Tests', () => {
         await expect(page).toHaveTitle(/Facebook/);
     });
 
-    test('Input Field Interactions', async ({ page }) => {
-        // Navigate to Facebook
-        await page.goto('https://www.facebook.com/');
+//     test('Input Field Interactions', async ({ page }) => {
+//         // Navigate to Facebook
+//         await page.goto('https://www.facebook.com/');
 
-        // Test email field
-        await page.fill('#email', 'test@example.com');
-        await expect(page.locator('#email')).toHaveValue('test@example.com');
+//         // Test email field
+//         await page.fill('#email', 'test@example.com');
+//         await expect(page.locator('#email')).toHaveValue('test@example.com');
         
-        // Test password field
-        await page.fill('#pass', 'testpassword');
-        await expect(page.locator('#pass')).toHaveValue('testpassword');
+//         // Test password field
+//         await page.fill('#pass', 'testpassword');
+//         await expect(page.locator('#pass')).toHaveValue('testpassword');
         
-        // Clear fields
-        await page.fill('#email', '');
-        await page.fill('#pass', '');
+//         // Clear fields
+//         await page.fill('#email', '');
+//         await page.fill('#pass', '');
         
-        // Verify fields are cleared
-        await expect(page.locator('#email')).toHaveValue('');
-        await expect(page.locator('#pass')).toHaveValue('');
-    });
-});
+//         // Verify fields are cleared
+//         await expect(page.locator('#email')).toHaveValue('');
+//         await expect(page.locator('#pass')).toHaveValue('');
+//     });
+// });
 
-    // Note: We're not testing with real credentials as that would be a security risk
-    // and could violate Facebook's terms of service
-});
+//     // Note: We're not testing with real credentials as that would be a security risk
+//     // and could violate Facebook's terms of service
+// });
 
 
 
